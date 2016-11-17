@@ -1,0 +1,170 @@
+/*style.scss*/
+
+body{
+    font-family: 'museo_sans_rounded_300regular';
+}
+
+/*helper classes*/
+
+
+
+
+.margin-top-2{
+    margin-top: 2.8rem;
+}
+.margin-top-3{
+    margin-top: 3rem;
+}
+.margin-bottom-13{
+    margin-bottom: 13rem;
+}
+
+
+/*headings*/
+
+.heading-primary{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.heading-border{
+    height: 1px;
+    width:50px;
+    background-color: $main-color;
+    display: block;
+    position: relative;
+    left:0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/*paragraphs*/
+
+.para-primary{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+
+/*email section*/
+
+.background-email{
+    background: url(../img/background-email.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    
+    .form-inline {
+        span{
+            color:$secondary-text-color; 
+            font-size: 2.6rem;
+            vertical-align: middle;
+            
+        }
+        .input-group {
+            vertical-align: baseline;
+            margin:0 auto;
+            
+            i{
+                margin: 0 5px;
+                color:#c4cbe0;
+                font-size: 2rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) { 
+    .background-email .form-inline .input-group i{
+         margin: 0 50px;
+    }
+}
+.email-input{
+    padding: 0.7rem 4.4rem 0.7rem 1.4rem;
+
+    &::-webkit-input-placeholder {
+        color: #444444;
+        font-style: italic;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: #444444; 
+        font-style: italic;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: #444444; 
+        opacity:1;
+        font-style: italic;
+    }
+
+    &:-ms-input-placeholder {  
+        color: #444444;  
+        font-style: italic;
+    }
+    
+}
+
+.btn-arrow {
+    background: url(../img/btn-primary-background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+	width: 172px; 
+	height: 200px;
+    padding:4rem 1rem 4rem 2rem;
+    border:0; 
+    background-color: transparent;
+    text-align: right;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    vertical-align: middle;
+    color:$secondary-text-color;
+    margin-left:-4.4rem;
+}
+
+@include media-breakpoint-up(sm) { 
+    .email-input{
+        width:300px;
+    }
+    
+}
+
+@include media-breakpoint-up(md) { 
+    .email-input{
+        width:400px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+ 
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+

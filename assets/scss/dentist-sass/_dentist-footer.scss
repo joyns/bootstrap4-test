@@ -1,0 +1,67 @@
+/*dentist footer*/
+
+.main-footer{
+    background-color: #2c2f3a;
+    color: $secondary-text-color;
+    
+    .footer-top{
+        background-color: $main-color;
+        a{
+            color: $secondary-text-color;
+            font-size:3rem;
+            line-height: 3rem;
+            text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+       
+    }
+    .footer-bottom{
+        padding-top: 75px;
+        font-family: 'Lato', sans-serif;
+        
+        a{
+            color: $secondary-text-color;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        i{
+            font-size: 1.5rem;
+        }
+        &>div{
+            text-align: center;
+            margin-bottom: 75px;
+        }
+        .copyright{
+            font-family: 'Raleway', sans-serif;
+        }
+        .made-by{
+            color:$tertiary-text-color;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) { 
+    .main-footer{
+        .footer-bottom>div:first-child{
+            text-align: left;
+            
+            & a{
+                margin-right:3rem;
+                margin-left:0rem;
+            }
+        }
+        .footer-bottom>div:last-child{
+            text-align: right;
+            
+            & a{
+                margin-left:3rem;
+                margin-right:0rem;
+            }
+        }
+    }
+}
